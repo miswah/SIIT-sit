@@ -1,0 +1,123 @@
+
+.show-area {
+    background-color: #E7FFF1;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+
+.navbar {
+    background-color: #E7FFF1;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin: 0;
+    border: 0;
+}
+
+.scroll {
+  background-color: white;
+}
+
+.navbar-items {
+    font-weight: 500 !important;
+    font-family: 'Poppins' !important;
+}
+
+a:hover {
+    color: #0df16c !important;
+}
+
+.button {
+    border-radius: 50px;
+    background-color: rgb(88, 88, 214);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .button:hover {
+    background-color:#E7FFF1;
+    border: 2px solid black;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 20px;
+    color: #0df16c;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+    /* TO hide "Get Started" Button in small screen  */
+  @media screen and (min-width: 0px) and (max-width: 400px) {
+    .button-hide { display: block; }  /* show it on small screens */
+  }
+  
+  @media screen and (min-width: 0px) and (max-width: 1473px) {
+    .button-hide { display: none; }   /* hide it elsewhere */
+  }
+
+  @media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}	
+
+
+
+#about-us{
+    font-family: 'Montserrat Alternates' !important;
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 4rem;
+}
+
+
+#history{
+    font-family: 'Montserrat Alternates' !important;
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-size: 4rem;
+      color: #0df16c;
+      border-bottom: 5px solid #0df16c;
+      border-top: 5px solid #0df16c;
+  }
+
+
+  #p-history {
+    font-family: 'Yantramanav' !important;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  #points{
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
